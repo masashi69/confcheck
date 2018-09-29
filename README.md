@@ -12,9 +12,10 @@ Usage: ./confcheck.sh {Search File} {Config1} ({Config2})
 ```
 
 ```sh
-./confcheck.sh address.txt cisco_sample.conf 
----Search: 10.0.1---
+Search: 10.0.1
+==============================
 File: cisco_sample.conf
+------------------------------
 server 10.0.1.1 auth-port 1812 acct-port 1813
 ip dhcp excluded-address 10.0.1.1 10.0.1.10
 network 10.0.1.0 255.255.255.0
@@ -24,8 +25,10 @@ nas 10.0.1.1 key 0 cisco123
 radius-server host 10.0.1.1 auth-port 1812 acct-port 1813 key cisco123
 
 
----Search: 10.0.2---
+Search: 10.0.2
+==============================
 File: cisco_sample.conf
+------------------------------
 ip dhcp excluded-address 10.0.2.1 10.0.2.10
 network 10.0.2.0 255.255.255.0
 default-router 10.0.2.1

@@ -18,6 +18,7 @@ Address=$(cut -d '.' -f 1,2,3  $1)
 
 function Confsearch () {
   echo "File: ${1##*/}"
+  echo "------------------------------"
   grep ${a} $1
   if [ $? == 1 ] ; then
     echo "Not Configured"
@@ -27,7 +28,8 @@ function Confsearch () {
 
 for a in ${Address}
   do 
-    echo -e "---Search: ${a}---"
+    echo -e "Search: ${a}"
+    echo "=============================="
     Confsearch ${File1}
 
     # 引数が2個あったら2個め出力
