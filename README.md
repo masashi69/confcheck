@@ -12,6 +12,8 @@ Usage: ./confcheck.sh {Search File} {Config1} ({Config2})
 ```
 
 ```sh
+# ./confcheck.sh address.txt cisco_sample.conf
+
 Search: 10.0.1
 ==============================
 File: cisco_sample.conf
